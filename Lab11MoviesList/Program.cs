@@ -46,28 +46,59 @@ namespace Lab11MoviesList
 
                 while(true)
                 {
-                    Console.WriteLine("What category of movies would you like to see? \n 1.Animated \n 2.Drama \n 3.Horror \n 4.Scifi");
+                    
+                    Console.WriteLine("What category of movies would you like to see? \n Animated \n Drama \n Horror \n Scifi");
                     string userCategory = Console.ReadLine();
-                    while (userCategory != "1" && userCategory != "2" && userCategory != "3")
+                    while (userCategory != "Animated" && userCategory != "Drama" && userCategory != "Horror" && userCategory != "Scifi")
                     {
                         Console.WriteLine("Sorry, invalid input. Please try again.");
                         break;
                     }
-                    if (userCategory == "1")
+                    if (userCategory == "Animated")
                     {
-                        Console.WriteLine($"Movie: {);
-                    }
-                    else if (userCategory == "2")
-                    {
+                        foreach (Movie movie in moviesList)
+                        {
+                            //if (movie.Title.Contains(userCategory))
+                            //{
 
+                            //if (userCategory == "Animated")
+                            //    Console.WriteLine($"Movie: {movie.Title} Category: {movie.Category.Contains("Animated")}");
+                            if (movie.Category.Contains("Animated"))
+                            {
+                                Console.WriteLine($"Movie: {movie.Title}, Category: {movie.Category}");
+                            }
+                            //}
+                        }
                     }
-                    else if (userCategory == "3")
+                    else if (userCategory == "Drama")
                     {
-
+                        foreach (Movie movie in moviesList)
+                        {
+                            if (movie.Category.Contains("Drama"))
+                            {
+                                Console.WriteLine($"Movie: {movie.Title}, Category: {movie.Category}");
+                            }
+                        }
                     }
-                    else if (userCategory == "4")
+                    else if (userCategory == "Horror")
                     {
-
+                        foreach (Movie movie in moviesList)
+                        {
+                            if (movie.Category.Contains("Horror"))
+                            {
+                                Console.WriteLine($"Movie: {movie.Title}, Category: {movie.Category}");
+                            }
+                        }
+                    }
+                    else if (userCategory == "Scifi")
+                    {
+                        foreach (Movie movie in moviesList)
+                        {
+                            if (movie.Category.Contains("Scifi"))
+                            {
+                                Console.WriteLine($"Movie: {movie.Title}, Category: {movie.Category}");
+                            }
+                        }
                     }
                     else
                     {

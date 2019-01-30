@@ -10,11 +10,28 @@ namespace Lab11MoviesList
     {
         private string title;
         private string category;
-        private string v;
 
-        public Movie(string v)
+        public string Title
         {
-            this.v = v;
+            get
+            {
+                return title;
+            }
+            set
+            {
+                title = value;
+            }
+        }
+        public string Category
+        {
+            get
+            {
+                return category;
+            }
+            set
+            {
+                category = value;
+            }
         }
 
         public Movie (string movieTitle, string movieCategory)
