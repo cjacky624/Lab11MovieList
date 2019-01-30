@@ -1,0 +1,6 @@
+c:\users\jc\documents\visual studio 2017\Projects\Lab11MoviesList\Lab11MoviesList\bin\Debug\Lab11MoviesList.exe.config
+c:\users\jc\documents\visual studio 2017\Projects\Lab11MoviesList\Lab11MoviesList\bin\Debug\Lab11MoviesList.exe
+c:\users\jc\documents\visual studio 2017\Projects\Lab11MoviesList\Lab11MoviesList\bin\Debug\Lab11MoviesList.pdb
+c:\users\jc\documents\visual studio 2017\Projects\Lab11MoviesList\Lab11MoviesList\obj\Debug\Lab11MoviesList.csprojResolveAssemblyReference.cache
+c:\users\jc\documents\visual studio 2017\Projects\Lab11MoviesList\Lab11MoviesList\obj\Debug\Lab11MoviesList.exe
+c:\users\jc\documents\visual studio 2017\Projects\Lab11MoviesList\Lab11MoviesList\obj\Debug\Lab11MoviesList.pdb
