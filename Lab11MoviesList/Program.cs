@@ -30,29 +30,31 @@ namespace Lab11MoviesList
         }
         static void Main(string[] args)
         {
+            
             Console.WriteLine("Welcome to the Movie List Application!");
-            List<Movie> moviesList = new List<Movie>();
+            bool run = true;
+            while (run == true)
             {
-                moviesList.Add(new Movie("Incredibles 2", "Animated"));
-                moviesList.Add(new Movie("The Grinch", "Animated"));
-                moviesList.Add(new Movie("A Star Is Born", "Drama"));
-                moviesList.Add(new Movie("A Quiet Place", "Drama"));
-                moviesList.Add(new Movie("Insidious: The Last Key", "Horror"));
-                moviesList.Add(new Movie("Dead Of The Dead: Bloodline", "Horror"));
-                moviesList.Add(new Movie("Halloween", "Horror"));
-                moviesList.Add(new Movie("Avengers: Infinity War", "Scifi"));
-                moviesList.Add(new Movie("Upgrade", "Scifi"));
-                moviesList.Add(new Movie("Ant-Man And The Wasp", "Scifi"));
-
-                while(true)
+                List<Movie> moviesList = new List<Movie>();
                 {
-                    
+                    moviesList.Add(new Movie("Incredibles 2", "Animated"));
+                    moviesList.Add(new Movie("The Grinch", "Animated"));
+                    moviesList.Add(new Movie("A Star Is Born", "Drama"));
+                    moviesList.Add(new Movie("A Quiet Place", "Drama"));
+                    moviesList.Add(new Movie("Insidious: The Last Key", "Horror"));
+                    moviesList.Add(new Movie("Dead Of The Dead: Bloodline", "Horror"));
+                    moviesList.Add(new Movie("Halloween", "Horror"));
+                    moviesList.Add(new Movie("Avengers: Infinity War", "Scifi"));
+                    moviesList.Add(new Movie("Upgrade", "Scifi"));
+                    moviesList.Add(new Movie("Ant-Man And The Wasp", "Scifi"));
+
+
                     Console.WriteLine("What category of movies would you like to see? \n Animated \n Drama \n Horror \n Scifi");
                     string userCategory = Console.ReadLine();
                     while (userCategory != "Animated" && userCategory != "Drama" && userCategory != "Horror" && userCategory != "Scifi")
                     {
                         Console.WriteLine("Sorry, invalid input. Please try again.");
-                        break;
+                        Continue();
                     }
                     if (userCategory == "Animated")
                     {
@@ -69,6 +71,7 @@ namespace Lab11MoviesList
                             }
                             //}
                         }
+                        Continue();
                     }
                     else if (userCategory == "Drama")
                     {
@@ -79,6 +82,7 @@ namespace Lab11MoviesList
                                 Console.WriteLine($"Movie: {movie.Title}, Category: {movie.Category}");
                             }
                         }
+                        Continue();
                     }
                     else if (userCategory == "Horror")
                     {
@@ -89,6 +93,7 @@ namespace Lab11MoviesList
                                 Console.WriteLine($"Movie: {movie.Title}, Category: {movie.Category}");
                             }
                         }
+                        Continue();
                     }
                     else if (userCategory == "Scifi")
                     {
@@ -99,18 +104,17 @@ namespace Lab11MoviesList
                                 Console.WriteLine($"Movie: {movie.Title}, Category: {movie.Category}");
                             }
                         }
+                        Continue();
                     }
                     else
                     {
                         Console.WriteLine("Sorry, invalid input. Please try again.");
-                        break;
-                           
+                        Continue();
+
                     }
-
-                    
-
-
                 }
+                run = Continue();
+                Console.WriteLine("Ok, bye!");
             }
         }
     }
